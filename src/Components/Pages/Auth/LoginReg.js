@@ -6,7 +6,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import UserLogin from './UserLogin';
 import UserReg from './UserReg';
-import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import TaskIcon from '@mui/icons-material/Task';
 import { Typography } from '@mui/material';
 
 const TabPanel = (props) => {
@@ -66,8 +66,8 @@ const LoginReg = (props) => {
                     </Box>
 
                     <Box sx={{ mt: 2, textAlign: "center" }}>
-                        <ShoppingBagIcon sx={{ color: 'purple', fontSize: 100 }} />
-                        <Typography variant='h5' sx={{ fontWeight: "bold" }}>Geek-Shop</Typography>
+                        <TaskIcon  sx={{ color: '#6C63FF', fontSize: 100 }} />
+                        <Typography variant='h5' sx={{ fontWeight: "bold" }}>Task Reminder</Typography>
                     </Box>
 
                 </Grid>

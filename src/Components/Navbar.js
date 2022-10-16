@@ -14,6 +14,8 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import { Divider } from '@mui/material';
+import TaskIcon from '@mui/icons-material/Task';
+
 
 const drawerWidth = 240;
 
@@ -28,7 +30,7 @@ function DrawerAppBar(props) {
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
             <Typography variant="h6" sx={{ my: 2 }}>
-                AKSH DESAI
+                <TaskIcon /> Task Reminder
             </Typography>
             <Divider />
 
@@ -57,7 +59,7 @@ function DrawerAppBar(props) {
 
     return (
         <Box sx={{ display: 'flex' }}>
-            <AppBar component="nav" color='secondary'>
+            <AppBar component="nav" sx={{backgroundColor: '#6C63FF'}}>
                 <Toolbar>
                     <IconButton
                         color="inherit"
@@ -73,7 +75,7 @@ function DrawerAppBar(props) {
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'block', sm: 'block' } }}
                     >
-                        AKSH DESAI
+                        <TaskIcon />  Task Reminder
                     </Typography>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                         <Button color="inherit" component={NavLink} style={({ isActive }) => { return { backgroundColor: isActive ? "#6d1b7b" : "" } }} sx={{ textTransform: "none" }} to="/" end>Home</Button>
